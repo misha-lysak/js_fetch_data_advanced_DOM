@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-17T21:32:45.781Z",
-    "end": "2021-03-17T21:32:46.893Z",
-    "duration": 1070,
+    "start": "2021-03-17T21:35:50.148Z",
+    "end": "2021-03-17T21:35:51.362Z",
+    "duration": 1152,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c410285c-584f-47f8-b0ea-d275717809b2",
+      "uuid": "8c582d24-c597-4798-aef6-57a868335493",
       "title": "",
       "fullFile": "cypress\\integration\\fetchDataAdvanced.spec.js",
       "file": "cypress\\integration\\fetchDataAdvanced.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "338f0461-1321-4b83-a61c-85d8f5ce3e6b",
+          "uuid": "0419b070-4196-4adf-a04d-cb1b634ca0dc",
           "title": "Fetch phones app",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should take an array of all successfully received details",
               "fullTitle": "Fetch phones app should take an array of all successfully received details",
               "timedOut": null,
-              "duration": 843,
+              "duration": 889,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get('@all').contains('All Successful');",
               "err": {},
-              "uuid": "230e6fcd-994a-4fd7-9956-819581f3a1dc",
-              "parentUUID": "338f0461-1321-4b83-a61c-85d8f5ce3e6b",
+              "uuid": "f5a2bd6a-31d1-470a-a1a7-c2c8fed198c3",
+              "parentUUID": "0419b070-4196-4adf-a04d-cb1b634ca0dc",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should contain phones in all successful",
               "fullTitle": "Fetch phones app should contain phones in all successful",
               "timedOut": null,
-              "duration": 227,
+              "duration": 263,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.get('@all').contains('MOTOROLA-XOOM-WITH-WI-FI');\ncy.get('@all').contains('MOTOROLA-XOOM');\ncy.get('@all').contains('MOTOROLA-CHARM-WITH-MOTOBLUR');",
               "err": {},
-              "uuid": "06199589-9d92-4a17-be17-743fb29949c9",
-              "parentUUID": "338f0461-1321-4b83-a61c-85d8f5ce3e6b",
+              "uuid": "970c70e0-ece0-4eb9-a638-e868a23a767e",
+              "parentUUID": "0419b070-4196-4adf-a04d-cb1b634ca0dc",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "230e6fcd-994a-4fd7-9956-819581f3a1dc",
-            "06199589-9d92-4a17-be17-743fb29949c9"
+            "f5a2bd6a-31d1-470a-a1a7-c2c8fed198c3",
+            "970c70e0-ece0-4eb9-a638-e868a23a767e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1070,
+          "duration": 1152,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

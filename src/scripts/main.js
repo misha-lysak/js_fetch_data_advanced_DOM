@@ -1,18 +1,18 @@
 'use strict';
 
-const listUrl
+const urls
   = 'https://mate-academy.github.io/phone-catalogue-static/api/phones.json';
 
 const getAllSuccessfulDetails = () => {
   return new Promise((resolve, reject) => {
-    fetch(listUrl)
+    fetch(urls)
       .then(response => response.json())
       .then(response => Promise.all(response))
       .then(response => resolve(response.map(item => item.id)));
   });
 };
 
-const listOfPhones = (dataFromServer) => {
+const renderingDomForAllPhones = (dataFromServer) => {
   const div = document.createElement('div');
 
   div.classList.add('all-successful');
@@ -31,14 +31,14 @@ const listOfPhones = (dataFromServer) => {
 
 const getFirstReceivedDetails = () => {
   return new Promise((resolve, reject) => {
-    fetch(listUrl)
+    fetch(urls)
       .then(response => response.json())
       .then(response => Promise.race(response))
       .then(response => resolve(response.id));
   });
 };
 
-const showFirstPhone = (url) => {
+const renderingDomForFirstPhone = (url) => {
   const div = document.createElement('div');
 
   div.classList.add('first-received');
@@ -54,7 +54,7 @@ const showFirstPhone = (url) => {
 };
 
 getAllSuccessfulDetails()
-  .then(listOfPhones);
+  .then(renderingDomForAllPhones);
 
 getFirstReceivedDetails()
-  .then(showFirstPhone);
+  .then(renderingDomForFirstPhone);
